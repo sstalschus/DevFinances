@@ -5,20 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>dev.finance$</title>
-
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <script>
+      document.addEventListener(
+        "DOMContentLoaded",
+        function () {
+          Themes.getTheme()
+        },
+        false
+      )
+    </script>
   </head>
-  <body>
+  <body id="body">
     <header>
       <img
         style="float: left; opacity: 70%"
         src="./assets/moon.svg"
         alt="Botão modo noturno"
+        onclick="Themes.darkTheme()"
+      />
+      <img
+        style="float: right; opacity: 70%"
+        alt="Botão modo diurno"
+        onclick="Themes.lightTheme()"
+        src="https://img.icons8.com/ios/50/000000/sun--v3.png"
       />
       <img src="./assets/logo.svg" alt="Logo Dev Finance" />
     </header>

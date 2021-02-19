@@ -5,20 +5,21 @@ const Modal = {
 }
 
 const Themes = {
-  themeDay: {},
-  themeNight: {
-    "--dark-blue": "#363f5f;",
-    "--green": "#49aa26;",
-    "--light-green": "#3dd705;",
-    "--red": "#e92929;",
-    "--bodyDay": "#f0f2f5;",
-    "--bodyNight": "#1f2223;",
-    "--white": "#fff;",
-    "--cardNight": "#181a1b;",
-    "--textNight": "#969cb3;"
+  getTheme() {
+    const theme = localStorage.getItem("theme")
+    if (theme === "dark") {
+      this.darkTheme()
+    } else if (theme === "light") {
+      this.lightTheme()
+    }
   },
-  toggleTheme() {
-    document.html.style
+  darkTheme() {
+    document.getElementById("body").classList.add("dark")
+    Storage.setTheme("dark")
+  },
+  lightTheme() {
+    document.getElementById("body").classList.remove("dark")
+    Storage.setTheme("light")
   }
 }
 
@@ -32,6 +33,9 @@ const Storage = {
       "dev.finances:transaction",
       JSON.stringify(transactions)
     )
+  },
+  setTheme(theme) {
+    localStorage.setItem("theme", theme)
   }
 }
 
