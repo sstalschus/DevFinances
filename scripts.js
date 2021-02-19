@@ -4,6 +4,24 @@ const Modal = {
   }
 }
 
+const Themes = {
+  themeDay: {},
+  themeNight: {
+    "--dark-blue": "#363f5f;",
+    "--green": "#49aa26;",
+    "--light-green": "#3dd705;",
+    "--red": "#e92929;",
+    "--bodyDay": "#f0f2f5;",
+    "--bodyNight": "#1f2223;",
+    "--white": "#fff;",
+    "--cardNight": "#181a1b;",
+    "--textNight": "#969cb3;"
+  },
+  toggleTheme() {
+    document.html.style
+  }
+}
+
 const Storage = {
   get() {
     return JSON.parse(localStorage.getItem("dev.finances:transaction")) || []

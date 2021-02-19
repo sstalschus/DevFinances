@@ -1,9 +1,26 @@
 /* Global ============================*/
+/*
 :root {
   --dark-blue: #363f5f;
   --green: #49aa26;
   --light-green: #3dd705;
   --red: #e92929;
+  --textNight: #969cb3;
+  --bodyDay: #f0f2f5;
+  --bodyNight: #1f2223;
+  --white: #fff;
+  --cardNight: #181a1b;
+}*/
+
+html {
+  --textNight: #969cb3;
+  --bodyDay: #363f5f;
+  --bodyNight: #f0f2f5;
+  --cardNight: #fff;
+  --red: #e92929;
+  --green: #49aa26;
+  --light-green: #3dd705;
+  --white: #fff;
 }
 * {
   margin: 0;
@@ -16,7 +33,7 @@ html {
 }
 
 body {
-  background-color: #f0f2f5;
+  background-color: var(--bodyNight);
   font-family: "Poppins", sans-serif;
 }
 
@@ -41,7 +58,7 @@ body {
 h2 {
   margin-top: 3.2rem;
   margin-bottom: 0.8rem;
-  color: var(--dark-blue);
+  color: var(--bodyDay);
 
   font-weight: normal;
 }
@@ -65,6 +82,7 @@ a:hover {
   color: var(--red);
   border: 2px var(--red) solid;
   border-radius: 0.25rem;
+  background-color: var(--cardNight);
 
   height: 50px;
   /*alinhando o cancelar ao centro*/
@@ -104,7 +122,7 @@ header {
 }
 
 #logo {
-  color: #fff;
+  color: var(--bodyDay);
   font-weight: 100;
 }
 
@@ -114,19 +132,19 @@ header {
 }
 
 #balance h2 {
-  color: #fff;
+  color: var(--bodyDay);
   margin-top: 0;
 }
 
 /* Cards ============================*/
 .card {
-  background: white;
+  background: var(--cardNight);
   padding: 1.5rem 2rem;
   border-radius: 0.25rem;
 
   margin-bottom: 2rem;
 
-  color: var(--dark-blue);
+  color: var(--bodyDay);
 }
 
 .card h3 {
@@ -147,7 +165,7 @@ header {
 
 .card.total {
   background: var(--green);
-  color: white;
+  color: var(--white);
 }
 
 /* Table ============================*/
@@ -161,7 +179,7 @@ header {
 #data-table {
   width: 100%;
   border-spacing: 0 0.5rem;
-  color: #969cb3;
+  color: var(--textNight);
 }
 
 table thead tr th:first-child,
@@ -174,7 +192,7 @@ table tbody tr td:last-child {
 }
 
 table th {
-  background: white;
+  background: var(--cardNight);
 
   text-align: left;
   padding: 1rem 2rem;
@@ -182,7 +200,7 @@ table th {
 }
 
 table tbody td {
-  background: white;
+  background: var(--cardNight);
 
   padding: 1rem 2rem;
 }
@@ -195,7 +213,7 @@ table tbody tr:hover {
 }
 
 td.description {
-  color: var(--dark-blue);
+  color: var(--textNight);
 }
 
 td.income {
@@ -230,7 +248,7 @@ td.expense {
 }
 
 .modal {
-  background: #f0f2f5;
+  background: var(--bodyNight);
   padding: 2.4rem;
   /* width: 90%; **/
   position: relative;
@@ -261,6 +279,7 @@ input {
 
 .input-group small {
   opacity: 0.4;
+  color: var(--bodyDay);
 }
 
 .input-group.actions {
@@ -277,7 +296,7 @@ input {
 footer {
   text-align: center;
   padding: 4rem 0 2rem;
-  color: var(--dark-blue);
+  color: var(--textNight);
   opacity: 0.6;
 }
 
