@@ -17,7 +17,8 @@
 <br>
 
 <p align="center">
-  <img alt="dev.finances" src=".github/screenDevFinance.png" width="100%">
+  <img alt="dev.finances" src=".github/screenDevFinance.png" width="70%">
+  <img alt="dev.finances" src=".github/screenDevFinance_2.png" width="30%">
 </p>
 
 ## 🚀 Tecnologias
