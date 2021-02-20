@@ -32,7 +32,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 O dev.finances é uma aplicação de controle financeiro, onde é possível cadastrar e excluir transações, ver o saldo de entrada e saída 💰 é possível também
-alterar modo de cor com base na sua
+alterar modo de cor com base na sua preferência. Fiz o deploy da aplicação apenas para conhecimento, ele pode ser encontrado no endereço: https://dev-finances-smk.herokuapp.com/
 
 ## :memo: Licença
 
