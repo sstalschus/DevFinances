@@ -17,8 +17,8 @@
 <br>
 
 <p align="center">
-  <img alt="dev.finances" src=".github/screenDevFinance.png" width="70%">
-  <img alt="dev.finances" src=".github/screenDevFinance_2.png" width="30%">
+  <img alt="dev.finances" src=".github/devfinances.png" width="100%">
+
 </p>
 
 ## 🚀 Tecnologias
@@ -31,7 +31,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O dev.finances é uma aplicação de controle financeiro, onde é possível cadastrar e excluir transações e ver o saldo de entrada e saída 💰
+O dev.finances é uma aplicação de controle financeiro, onde é possível cadastrar e excluir transações, ver o saldo de entrada e saída 💰 é possível também
+alterar modo de cor com base na sua
 
 ## :memo: Licença
 
@@ -39,4 +40,4 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 
 ---
 
-Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
+Esse projeto foi desenvolvido pela Rocketseat em na Maratona Discover, eu desenvolvi algumas modificações tendo como base o projeto inicial
